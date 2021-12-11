@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--viewport es una etiqueta importante, utilizada para responsive, lo verán en css-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos Bootcamp</title>
+</head>
+<body>
+    <header>
+        <h1>Fotos Bootcamp</h1>
+    </header>
+    <main>
+        <div>
+            <!--utilizar el atributo width no es recomendable, eso deberia hacerlo el css-->
+            <!--alt, mostrar texto alternativo en caso la imagen no se pueda encontrar y para personas con visibilidad limitada-->
+            <img src="./Dia2/assets/images/leones1.jpg"
+            alt="imagen de león bebe"
+            width="400"
+            title="león bebé solito">
+        </div>
+        <hr>
+        <!--source-->
+        <picture>
+            <!--media, se basa en el ancho del navegador-->
+            <source 
+            media="(min-width:500px)" 
+            srcset="./Dia2/assets/images/leones1.jpg">
+            <!--smartphone - móvil-->
+            <img src="./Dia2/assets/images/leones1.jpg" 
+            alt="leones"
+            title="leon 500px">
+            
+        </picture>
+    </main>
+</body>
+</html>
